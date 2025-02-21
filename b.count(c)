@@ -1,0 +1,9 @@
+a = int(input())
+
+b = list(map(int, input().split()))
+c = int(input())
+
+count = b.count(c)
+print(count)
+
+# 파이썬에서 count를 세고싶을 때 b.count(c)
