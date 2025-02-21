@@ -1,0 +1,13 @@
+import sys
+a = int(sys.stdin.readline())
+
+for i in range(a):
+    print(" " * (a-i-1) + "*" * (i+1))
+
+# sys.stdin.readline() 빠르게 입력을 받을 수 있는 함수 
+input()이 느린이유?: 
+1. input() 은 매개변수로 prompt message를 받는다. (따라서 입력을 받기 전에 prompt message를 출력해야 한다.)
+2. 입력받은 값의 개행 문자를 삭제시키고 반환한다.
+위 과정을 모두 거쳐 느림. 
+개행문자:in_ = input("prompt message 를 입력해주세요: ")
+print(in_)
