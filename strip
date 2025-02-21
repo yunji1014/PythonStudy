@@ -1,0 +1,8 @@
+import sys
+
+while True:
+    line = sys.stdin.readline().strip() #strip 양 측 공백문자 제거
+    if not line:
+        break
+    a, b = map(int, line.split())
+    print(a + b)
